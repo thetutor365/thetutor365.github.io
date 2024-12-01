@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Portfolio</title>
+    <title>Professional Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -44,7 +44,7 @@
         }
 
         #showcase {
-            background: url('https://source.unsplash.com/1600x900/?tech') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x900/?professional,office') no-repeat center center/cover;
             color: #fff;
             height: 100vh;
             display: flex;
@@ -71,7 +71,7 @@
         }
 
         .project {
-            margin-bottom: 1em;
+            margin-bottom: 2em;
         }
 
         .project img {
@@ -83,11 +83,49 @@
         .project h3 {
             margin-top: 0.5em;
         }
+
+        .project p {
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin: 1em 0 0.5em;
+            font-weight: bold;
+        }
+
+        form input[type="text"], form input[type="email"] {
+            padding: 0.7em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background: #333;
+            color: #fff;
+            padding: 0.7em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        form input[type="submit"]:hover {
+            background: #555;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>My Cool Portfolio</h1>
+        <h1>Professional Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -99,8 +137,8 @@
 
     <section id="showcase">
         <div class="container">
-            <h1>Welcome to My World</h1>
-            <p>I'm a passionate developer creating modern and responsive web applications.</p>
+            <h1>Welcome to My Professional World</h1>
+            <p>I create impactful and professional web applications that stand out.</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
@@ -108,7 +146,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Here's a brief introduction about myself and my background.</p>
+            <p>With a passion for developing sleek and functional web applications, I bring a creative and detail-oriented approach to every project. My expertise lies in both front-end and back-end development, ensuring seamless user experiences.</p>
         </div>
     </section>
 
@@ -116,14 +154,19 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
-                <img src="https://source.unsplash.com/600x400/?project1" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of the project.</p>
+                <img src="https://source.unsplash.com/600x400/?website" alt="Project 1">
+                <h3>Project 1: E-Commerce Website</h3>
+                <p>A fully functional e-commerce website with user-friendly design and seamless shopping experience. Implemented payment gateways, product search, and customer reviews.</p>
             </div>
             <div class="project">
-                <img src="https://source.unsplash.com/600x400/?project2" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of the project.</p>
+                <img src="https://source.unsplash.com/600x400/?app" alt="Project 2">
+                <h3>Project 2: Mobile App</h3>
+                <p>A cross-platform mobile application that enhances productivity with intuitive user interfaces and advanced features. Integrated cloud storage and real-time data synchronization.</p>
+            </div>
+            <div class="project">
+                <img src="https://source.unsplash.com/600x400/?analytics" alt="Project 3">
+                <h3>Project 3: Data Analytics Dashboard</h3>
+                <p>A powerful data analytics dashboard with interactive charts and real-time data updates. Designed for ease of use, enabling businesses to make data-driven decisions efficiently.</p>
             </div>
         </div>
     </section>
@@ -133,9 +176,9 @@
             <h2>Contact</h2>
             <form>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <input type="submit" value="Submit">
             </form>
         </div>
